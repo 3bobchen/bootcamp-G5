@@ -154,14 +154,28 @@ const features = [
         ),
     },
     {
-        title: "Color",
+        title: "275L",
         description:
-            "you wore the most often.",
+            "of water saved over lifetime.",
         demo: (
             <a href={DEPLOY_URL}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Oxford_blue.png"
+                    src="https://t3.ftcdn.net/jpg/04/18/36/08/360_F_418360847_Cb8naIISAo7bYi8dSSJjIKxrevFgZoZb.jpg"
+                    alt="Deploy with Vercel"
+                    width={120}
+                />
+            </a>
+        ),
+    },{
+        title: "Summer",
+        description:
+            "was the season of clothes you wore the most.",
+        demo: (
+            <a href={DEPLOY_URL}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                    src="https://www.onlygfx.com/wp-content/uploads/2022/03/sun-clipart-set-5.png"
                     alt="Deploy with Vercel"
                     width={120}
                 />
