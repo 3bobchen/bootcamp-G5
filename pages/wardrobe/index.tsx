@@ -125,7 +125,7 @@ const features = [
         title: "Performance first",
         description:
             "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
-        demo: <WebVitals />,
+        demo: <WebVitals number={50} />,
     },
     {
         title: "One-click Deploy",
