@@ -62,8 +62,8 @@ export default function Home() {
             {/*        />*/}
             {/*    ))}*/}
             {/*</div>*/}
-            <div>
-
+            <div style={{zIndex: 200, color: "#000"}}>
+                Personal Style
             </div>
         </Layout>
     );
