@@ -57,35 +57,34 @@ export default function Home(auth: { auth: boolean }) {
             </motion.div>
             {/* here we are animating with Tailwind instead of Framer Motion because Framer Motion messes up the z-index for child components */}
             {
-                !auth.auth ? <div style={{ zIndex: 200, marginTop: "8vh", width: "100vw", height: "40vh"}}>
-                    <h2>
+                !auth.auth ? <div style={{ zIndex: 200, marginTop: "10vh", width: "100vw", height: "40vh"}}>
+                    <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-5xl md:leading-[5rem]">
                         Fast fashion is not free. Someone, somewhere is paying.
                     </h2>
-                    <h3>Lucy Seigle</h3>
-                    <div>
-                        <div>
-                            <Image src={Factory} alt={""} style={{width: "15rem"}}/>
-                            <p>Fashion contributes to 10% off global greenhouse emissions</p>
+                    <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                            <Image src={Factory} alt={""} style={{width: "15rem", margin: "auto"}}/>
+                            <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Fashion contributes to 10% of global greenhouse emissions</p>
                         </div>
-                        <div>
-                            <Image src={Water} alt={""} style={{width: "15rem"}}/>
-                            <p>Fashion contributes to 10% off global greenhouse emissions</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <Image src={Clothes} alt={""} style={{width: "15rem"}}/>
-                            <p>Fashion contributes to 10% off global greenhouse emissions</p>
-                        </div>
-                        <div>
-                            <Image src={Number15} alt={""} style={{width: "15rem"}}/>
-                            <p>Fashion contributes to 10% off global greenhouse emissions</p>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                            <Image src={Water} alt={""} style={{width: "15rem", margin: "auto"}}/>
+                            <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Fashion contributes to 20% of global wastewater</p>
                         </div>
                     </div>
-                    <h2>
+                    <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                            <Image src={Clothes} alt={""} style={{width: "15rem", margin: "auto"}}/>
+                            <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>53 Million tonnes of clothing are incinerated or go to landfill each year</p>
+                        </div>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                            <Image src={Number15} alt={""} style={{width: "15rem", margin: "auto"}}/>
+                            <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Each Australian buys 15KG of clothes per year</p>
+                        </div>
+                    </div>
+                    <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-2xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-5xl md:leading-[5rem]">
                         Buy less. Choose well. Make it last. Make it fresh.
                     </h2>
-                    <div>
+                    <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
                         <div>
                             <Image src={Factory} alt={""} style={{width: "15rem"}}/>
                             <p>Fashion contributes to 10% off global greenhouse emissions</p>

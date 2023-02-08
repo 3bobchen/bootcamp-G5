@@ -28,6 +28,7 @@ export default function Layout({
             <Meta {...meta} />
             <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100"/>
             <div
+                style={{zIndex: "400"}}
                 className={`fixed top-0 w-full ${
                     scrolled
                         ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
