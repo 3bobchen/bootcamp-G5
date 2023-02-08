@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bootcampg5-dev-134442-authRole",
+      "UnauthRoleArn": "arn:aws:iam::146873458441:role/amplify-bootcampg5-dev-134442-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::146873458441:role/amplify-bootcampg5-dev-134442-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-bootcampg5-dev-134442-deployment",
+      "UnauthRoleName": "amplify-bootcampg5-dev-134442-unauthRole",
+      "StackName": "amplify-bootcampg5-dev-134442",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:146873458441:stack/amplify-bootcampg5-dev-134442/8c284ce0-a75a-11ed-941b-06f4364cec0d",
+      "AmplifyAppId": "d2kfzwktivswff"
+    }
+  }
+}
