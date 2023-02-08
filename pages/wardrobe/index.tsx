@@ -3,10 +3,12 @@ import Balancer from "react-wrap-balancer";
 import { motion } from "framer-motion";
 import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
+import {useState} from "react";
 
-export default function Home(auth: { auth: boolean }) {
+export default function Home() {
+    const [auth, setAuth] = useState(false)
     return (
-        <Layout auth={auth.auth}>
+        <Layout auth={auth} setAuth={setAuth}>
             <motion.div
                 className="max-w-xl px-5 xl:px-0"
                 initial="hidden"

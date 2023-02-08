@@ -12,7 +12,7 @@ import {useState} from "react";
 export default function Home() {
     const [auth, setAuth] = useState(false)
     return (
-        <Layout>
+        <Layout setAuth={setAuth} auth={auth}>
             <motion.div
                 className="max-w-xl px-5 xl:px-0"
                 initial="hidden"
