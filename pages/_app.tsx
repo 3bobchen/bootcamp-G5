@@ -7,6 +7,8 @@ import { Provider as RWBProvider } from "react-wrap-balancer";
 import cx from "classnames";
 import localFont from "@next/font/local";
 import { Inter } from "@next/font/google";
+import Layout from "@/components/layout";
+import {useState} from "react";
 
 const sfPro = localFont({
   src: "../styles/SF-Pro-Display-Medium.otf",
@@ -22,11 +24,14 @@ export default function MyApp({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps<{ session: Session }>) {
+    const [auth, setAuth] = useState(false)
   return (
     <SessionProvider session={session}>
       <RWBProvider>
         <div className={cx(sfPro.variable, inter.variable)}>
-          <Component {...pageProps} />
+            <Layout setAuth={setAuth} auth={auth}>
+                <Component {...pageProps} auth={auth} />
+            </Layout>
         </div>
       </RWBProvider>
       <Analytics />
