@@ -62,8 +62,21 @@ export default function Home() {
             {/*        />*/}
             {/*    ))}*/}
             {/*</div>*/}
-            <div>
-
+            <div style={{zIndex: 200}}>
+                <div>
+                    <h2>Personal Style</h2>
+                    <div>
+                        <div>
+                            <h3>minimalist</h3>
+                            <img src="https://picsum.photos/200" alt="empty"/>
+                            <p> the environment is really under duress</p>
+                        </div>
+                        <div>
+                            <img src="https://picsum.photos/200" alt="empty"/>
+                            <h3>hello</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Layout>
     );
