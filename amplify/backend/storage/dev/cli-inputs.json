@@ -1,0 +1,14 @@
+{
+  "resourceName": "dev",
+  "policyUUID": "2290fc3c",
+  "bucketName": "dev",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
