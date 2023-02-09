@@ -10,9 +10,8 @@ import Image from "next/image";
 import {useState} from "react";
 
 export default function Home() {
-    const [auth, setAuth] = useState(false)
     return (
-        <Layout setAuth={setAuth} auth={auth}>
+        <>
             <motion.div
                 className="max-w-xl px-5 xl:px-0"
                 initial="hidden"
@@ -62,23 +61,23 @@ export default function Home() {
                     />
                 ))}
             </div>
-            <div style={{zIndex: 200}}>
-                <div>
-                    <h2>Personal Style</h2>
-                    <div>
-                        <div>
-                            <h3>minimalist</h3>
-                            <img src="https://picsum.photos/200" alt="empty"/>
-                            <p> the environment is really under duress</p>
-                        </div>
-                        <div>
-                            <img src="https://picsum.photos/200" alt="empty"/>
-                            <h3>hello</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Layout>
+            {/*<div style={{zIndex: 200}}>*/}
+            {/*    <div>*/}
+            {/*        <h2>Personal Style</h2>*/}
+            {/*        <div>*/}
+            {/*            <div>*/}
+            {/*                <h3>minimalist</h3>*/}
+            {/*                <img src="https://picsum.photos/200" alt="empty"/>*/}
+            {/*                <p> the environment is really under duress</p>*/}
+            {/*            </div>*/}
+            {/*            <div>*/}
+            {/*                <img src="https://picsum.photos/200" alt="empty"/>*/}
+            {/*                <h3>hello</h3>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+        </>
     );
 }
 

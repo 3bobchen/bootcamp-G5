@@ -48,22 +48,24 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                 >
                     <Twitter className="h-5 w-5 text-[#1d9bf0]"/>
                     <p className="text-sm font-semibold text-[#1d9bf0]">
-                        Introducing Wardrobe
+                        Introducing Weardrobe
                     </p>
                 </motion.a>
                 <motion.h1
                     className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent drop-shadow-sm md:text-7xl md:leading-[5rem]"
                     variants={FADE_DOWN_ANIMATION_VARIANTS}
                 >
-                    <Balancer>Same clothes, new fits</Balancer>
+                    {
+                        auth.auth ? <Balancer>Hi Harry</Balancer> : <Balancer>Same clothes, new fits</Balancer>
+                    }
                 </motion.h1>
                 <motion.p
                     className="mt-6 text-center text-gray-500 md:text-xl"
                     variants={FADE_DOWN_ANIMATION_VARIANTS}
                 >
-                    <Balancer>
-                        An intelligent digital wardrobe to store, view and measure your collection of clothes.
-                    </Balancer>
+                        {
+                            auth.auth ? <Balancer> An intelligent digital wardrobe to store, view and measure your collection of clothes.</Balancer> : <Balancer>Ready to get the most from the clothes you already have?</Balancer>
+                        }
                 </motion.p>
             </motion.div>
             {/* here we are animating with Tailwind instead of Framer Motion because Framer Motion messes up the z-index for child components */}
