@@ -12,28 +12,6 @@ export default function PrivatePage(props) {
       setImage(i);
       setCreateObjectURL(URL.createObjectURL(i));
     }
-
-    Auth.signIn("harry", "testpass")
-    .then(user => {
-      console.log("signing in")
-      console.log(user)
-        if (user.challengeName === 'NEW_PASSWORD_REQUIRED') {
-          console.log("pass challenge")
-            Auth.completeNewPassword(
-                user,               // the Cognito User Object
-                "testpass",       // the new password
-            ).then(user => {
-                console.log(user);
-            }).catch(e => {
-              console.log(e);
-            });
-        } else {
-            // other situations
-        }
-    }).catch(e => {
-        console.log(e);
-    });
-
   };
 
   const uploadToServer = async (event) => {     
@@ -49,19 +27,14 @@ export default function PrivatePage(props) {
   };
 
   return (
-    <div style={{zIndex: "200"}}>
-      <div>
+      <div style={{zIndex: "200"}}>
         <img src={createObjectURL} />
         <h4>Select Image</h4>
         <input type="file" name="myImage" onChange={uploadToClient} />
-        <button
-          className="btn btn-primary"
-          type="submit"
-          onClick={uploadToServer}
-        >
+        <br />        
+        <button className="btn btn-primary" type="submit" onClick={uploadToServer}>
           Send to server
         </button>
       </div>
-    </div>
   );
 }
