@@ -7,11 +7,12 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormHelperText from '@mui/material/FormHelperText';
 import Checkbox from '@mui/material/Checkbox';
 
-export default function CheckboxesGroup() {
+export default function SettingsCheckboxesGroup() {
     const [state, setState] = React.useState({
-        gilad: true,
-        jason: false,
-        antoine: false,
+        work: true,
+        home: false,
+        out: false,
+        active: false
     });
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -21,64 +22,40 @@ export default function CheckboxesGroup() {
         });
     };
 
-    const { gilad, jason, antoine } = state;
-    const error = [gilad, jason, antoine].filter((v) => v).length !== 2;
+    const { work, home, out, active } = state;
+    const error = [work, home, out, active].filter((v) => v).length !== 2;
 
     return (
         <Box sx={{ display: 'flex' }}>
             <FormControl sx={{ m: 3 }} component="fieldset" variant="standard">
-                <FormLabel component="legend">Assign responsibility</FormLabel>
+                <FormLabel component="legend">Occasion</FormLabel>
                 <FormGroup>
                     <FormControlLabel
                         control={
-                            <Checkbox checked={gilad} onChange={handleChange} name="gilad" />
+                            <Checkbox checked={work} onChange={handleChange} name="work" />
                         }
-                        label="Gilad Gray"
+                        label="Work/Office"
                     />
                     <FormControlLabel
                         control={
-                            <Checkbox checked={jason} onChange={handleChange} name="jason" />
+                            <Checkbox checked={home} onChange={handleChange} name="home" />
                         }
-                        label="Jason Killian"
+                        label="Home"
                     />
                     <FormControlLabel
                         control={
-                            <Checkbox checked={antoine} onChange={handleChange} name="antoine" />
+                            <Checkbox checked={out} onChange={handleChange} name="out" />
                         }
-                        label="Antoine Llorca"
+                        label="Going Out"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox checked={active} onChange={handleChange} name="active" />
+                        }
+                        label="Sport/Active"
                     />
                 </FormGroup>
-                <FormHelperText>Be careful</FormHelperText>
-            </FormControl>
-            <FormControl
-                required
-                error={error}
-                component="fieldset"
-                sx={{ m: 3 }}
-                variant="standard"
-            >
-                <FormLabel component="legend">Pick two</FormLabel>
-                <FormGroup>
-                    <FormControlLabel
-                        control={
-                            <Checkbox checked={gilad} onChange={handleChange} name="gilad" />
-                        }
-                        label="Gilad Gray"
-                    />
-                    <FormControlLabel
-                        control={
-                            <Checkbox checked={jason} onChange={handleChange} name="jason" />
-                        }
-                        label="Jason Killian"
-                    />
-                    <FormControlLabel
-                        control={
-                            <Checkbox checked={antoine} onChange={handleChange} name="antoine" />
-                        }
-                        label="Antoine Llorca"
-                    />
-                </FormGroup>
-                <FormHelperText>You can display an error</FormHelperText>
+                <FormHelperText>What are you planning to do today?</FormHelperText>
             </FormControl>
         </Box>
     );

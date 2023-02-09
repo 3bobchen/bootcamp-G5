@@ -9,6 +9,7 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import React, {useState} from "react";
 import {TextField} from "@mui/material";
+import SettingsCheckboxesGroup from "@/components/shared/checkboxes/Checkboxes";
 
 export default function Inspiration() {
     const [auth, setAuth] = useState(false)
@@ -44,8 +45,13 @@ export default function Inspiration() {
                     </Balancer>
                 </motion.p>
             </motion.div>
-            <div>
-                <TextField style={{width: "80vw"}} variant="outlined" label="Where are you going today?" type="text" />
+            <div style={{display: "flex", flexDirection: "column", marginTop: "2rem"}}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "30px"}}>
+                    <TextField style={{height: "20px", width: "70vw"}} variant="filled" label="Where are you going today?" />
+                    <p>Enter the city </p>
+                    <TextField variant="filled" label="What sort off vibe are you looking for?" />
+                </div>
+                <SettingsCheckboxesGroup/>
             </div>
         </Layout>
     );

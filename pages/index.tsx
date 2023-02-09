@@ -261,7 +261,7 @@ const features = [
         description:
             "Jump to view and edit your wardrobe inventory.",
         demo: (
-            <a href={'/wardrobe'}>
+            <a href={'/inspiration'}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     src="https://cdn-icons-png.flaticon.com/512/33/33308.png"
