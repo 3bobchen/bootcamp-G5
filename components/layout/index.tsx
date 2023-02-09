@@ -26,7 +26,7 @@ export default function Layout({
     return (
         <>
             <Meta {...meta} />
-            <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100"/>
+            <div className="fixed h-screen w-full bg-gradient-to-br from-green-500 via-white to-green-50"/>
             <div
                 style={{zIndex: "400"}}
                 className={`fixed top-0 w-full ${

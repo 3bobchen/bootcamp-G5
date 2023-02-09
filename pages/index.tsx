@@ -71,14 +71,14 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                 !auth.auth ? <div style={{ zIndex: 200, marginTop: "10vh", width: "100vw", height: "40vh"}}>
                     <div>
                         <div className="mx-auto max-w-7xl pb-24 sm:px-6 sm:pb-32 lg:px-8">
-                            <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                            <div className="relative isolate overflow-hidden bg-green-600 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 1024 1024"
                                     className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2"
                                     aria-hidden="true"
                                 >
-                                    <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+                                    <circle cx={512} cy={512} r={512} fill="#d9f99d" fillOpacity="0.7" />
                                     <defs>
                                         <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
                                             <stop stopColor="#7775D6" />
@@ -123,21 +123,21 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                         Fast fashion is not free. Someone, somewhere is paying.
                     </h2>
                     <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Factory} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Fashion contributes to 10% of global greenhouse emissions</p>
                         </div>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Water} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Fashion contributes to 20% of global wastewater</p>
                         </div>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Clothes} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>53 Million tonnes of clothing are incinerated or go to landfill each year</p>
                         </div>
-                        <div id="start-of-content" style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div id="start-of-content" style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Number15} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Each Australian buys 15KG of clothes per year</p>
                         </div>
@@ -149,29 +149,29 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                         Make it last. Make it fresh.
                     </h2>
                     <div style={{display: "flex", flexDirection: "row", width: "100vw", justifyContent: "center", marginTop: "2rem", marginBottom: "2rem", gap: "5rem"}}>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{width: "22rem", backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Creativity} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Know what is in your wardrobe</p>
                         </div>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{width: "22rem",backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Statistics} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Understand how you use your wardrobe</p>
                         </div>
-                        <div style={{backgroundColor: "white", padding: "2rem", borderRadius:"2rem"}}>
+                        <div style={{width: "22rem",backgroundColor: "white", padding: "2rem", borderRadius:"2rem", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
                             <Image src={Idea} alt={""} style={{width: "15rem", margin: "auto"}}/>
                             <p style={{maxWidth: "20rem", textAlign: "center", padding: "2rem 0", fontWeight: "700"}}>Be inspired as to how you can wear your wardrobe better</p>
                         </div>
                     </div>
                     <div>
                         <div className="mx-auto max-w-7xl pb-24 sm:px-6 sm:pb-32 lg:px-8">
-                            <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                            <div className="relative isolate overflow-hidden bg-green-600 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 1024 1024"
                                     className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:translate-y-0 lg:-translate-x-1/2"
                                     aria-hidden="true"
                                 >
-                                    <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+                                    <circle cx={512} cy={512} r={512} fill="#d9f99d" fillOpacity="0.7" />
                                     <defs>
                                         <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
                                             <stop stopColor="#7775D6" />
