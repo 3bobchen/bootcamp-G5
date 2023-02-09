@@ -30,7 +30,7 @@ export default function MyApp({
       <RWBProvider>
         <div className={cx(sfPro.variable, inter.variable)}>
             <Layout setAuth={setAuth} auth={auth}>
-                <Component {...pageProps} auth={auth} />
+                <Component {...pageProps} auth={auth} setAuth={setAuth} />
             </Layout>
         </div>
       </RWBProvider>

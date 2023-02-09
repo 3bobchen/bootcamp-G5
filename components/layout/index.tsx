@@ -70,7 +70,7 @@ export default function Layout({
                                             }}
                                             {...FADE_IN_ANIMATION_SETTINGS}
                                         >
-                                            Sign In
+                                            Get Started
                                         </motion.button>
                                     ) : (
                                         <UserDropdown/>
