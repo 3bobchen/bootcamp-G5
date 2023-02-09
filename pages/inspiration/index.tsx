@@ -48,7 +48,7 @@ export default function Inspiration() {
             <div style={{display: "flex", flexDirection: "column", marginTop: "2rem"}}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "30px"}}>
                     <TextField style={{height: "20px", width: "70vw"}} variant="filled" label="Where are you going today?" />
-                    <p>Enter the city </p>
+                    <p>Location data required to fetch weather and advise on outfit inspirations.</p>
                     <TextField variant="filled" label="What sort off vibe are you looking for?" />
                 </div>
                 <SettingsCheckboxesGroup/>
