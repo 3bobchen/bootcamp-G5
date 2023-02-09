@@ -13,7 +13,11 @@
     },
     "categories": {
       "auth": {
-        "bootcampg5f14a0904": {}
+        "bootcampg5f14a0904": {},
+        "bootcampG5": {}
+      },
+      "storage": {
+        "dev": {}
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "auth": {
-    "bootcampg5f14a0904": {
+    "bootcampG5": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -12,9 +12,7 @@
           "passwordPolicyCharacters": [],
           "passwordPolicyMinLength": 8
         },
-        "signupAttributes": [
-          "EMAIL"
-        ],
+        "signupAttributes": [],
         "socialProviders": [],
         "usernameAttributes": [],
         "verificationMechanisms": [

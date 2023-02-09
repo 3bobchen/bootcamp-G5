@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "bootcampg5f14a0904_identitypool_f14a0904",
+    "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "bootcaf14a0904",
-    "userPoolName": "bootcampg5f14a0904_userpool_f14a0904",
+    "resourceNameTruncated": "bootca5ff2954d",
+    "userPoolName": "bootcampG5",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -19,26 +19,24 @@
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
-    "requiredAttributes": [
-      "email"
-    ],
+    "requiredAttributes": [],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
-    "userpoolClientWriteAttributes": [
-      "email"
-    ],
-    "userpoolClientReadAttributes": [
-      "email"
-    ],
-    "userpoolClientLambdaRole": "bootcaf14a0904_userpoolclient_lambda_role",
+    "userpoolClientWriteAttributes": [],
+    "userpoolClientReadAttributes": [],
+    "userpoolClientLambdaRole": "bootca5ff2954d_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "f14a0904",
-    "resourceName": "bootcampg5f14a0904",
+    "sharedId": "5ff2954d",
+    "resourceName": "bootcampG5",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "default",
-    "userPoolGroupList": [],
     "serviceName": "Cognito",
+    "useDefault": "manual",
+    "userPoolGroups": false,
+    "userPoolGroupList": [],
+    "adminQueries": false,
+    "thirdPartyAuth": false,
+    "authProviders": [],
     "usernameCaseSensitive": false,
     "useEnabledMfas": true
   }
