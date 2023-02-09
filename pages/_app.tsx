@@ -9,7 +9,7 @@ import localFont from "@next/font/local";
 import { Inter } from "@next/font/google";
 import Layout from "@/components/layout";
 import {useState} from "react";
-import { Amplify } from 'aws-amplify';
+import { Amplify, Storage } from 'aws-amplify';
 import awsconfig from 'src/aws-exports';
 
 const sfPro = localFont({
