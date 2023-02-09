@@ -7,6 +7,8 @@ import {Dispatch, ReactNode, SetStateAction} from "react";
 import useScroll from "@/lib/hooks/use-scroll";
 import Meta from "./meta";
 import UserDropdown from "./user-dropdown";
+import { useRouter } from "next/router";
+import { Auth } from "aws-amplify";
 
 export default function Layout({
                                    meta,
@@ -23,6 +25,7 @@ export default function Layout({
 }) {
     const {data: session, status} = useSession();
     const scrolled = useScroll(50);
+    const router = useRouter()
     return (
         <>
             <Meta {...meta} />
@@ -53,7 +56,7 @@ export default function Layout({
                                     <motion.button
                                         className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
                                         onClick={() => {
-                                            setAuth(false)
+                                            Auth.signOut().then(() => {setAuth(false)});                                            
                                         }}
                                         {...FADE_IN_ANIMATION_SETTINGS}
                                     >
@@ -66,7 +69,7 @@ export default function Layout({
                                         <motion.button
                                             className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
                                             onClick={() => {
-                                                setAuth(true)
+                                                router.push("/login")
                                             }}
                                             {...FADE_IN_ANIMATION_SETTINGS}
                                         >
