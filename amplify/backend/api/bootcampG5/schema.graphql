@@ -1,0 +1,15 @@
+enum GarmentType {
+  DRESS
+  PANTS
+  SHORTS
+  SKIRTS
+  TSHIRT
+  SHIRT
+}
+
+type Garment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  type: GarmentType
+  colour: String
+}
+ 

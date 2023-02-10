@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Auth, Storage } from 'aws-amplify';
+import { DataStore } from '@aws-amplify/datastore';
+import { Garment, GarmentType } from '../../src/models';
 
 export default function PrivatePage(props) {
   const [image, setImage] = useState(null);
@@ -15,15 +17,24 @@ export default function PrivatePage(props) {
   };
 
   const uploadToServer = async (event) => {     
-    const result = await Storage.put("test.png", image);
-    console.log(result)
-    // const body = new FormData();
-    // // console.log("file", image)
-    // body.append("file", image);    
-    // const response = await fetch("/api/upload", {
-    //   method: "POST",
-    //   body
-    // });
+    const result = await Storage.put("check.png", image);
+    const retrievedImage = await Storage.get("check.png", image);
+    console.log(retrievedImage)
+
+    // store in dynamo
+    await DataStore.save(
+      new Garment({
+      "type": GarmentType.DRESS,
+      "colour": "Lorem ipsum dolor sit amet"
+    })
+  );
+
+    const body = new FormData();
+    body.append("file", image);
+    const response = await fetch("/api/upload", {
+      method: "POST",
+      body
+    });
   };
 
   return (
