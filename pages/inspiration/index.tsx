@@ -5,7 +5,19 @@ import { DEPLOY_URL, FADE_DOWN_ANIMATION_VARIANTS } from "@/lib/constants";
 import React, {useState} from "react";
 import {TextField} from "@mui/material";
 import SettingsCheckboxesGroup from "@/components/shared/checkboxes/Checkboxes";
+import Image from 'next/image'
 
+import SummerT1 from '../../public/assets/clothes/SUMMERTOP1.webp'
+import SummerT2 from '../../public/assets/clothes/SUMMERTOP2.jpeg'
+import SummerB1 from '../../public/assets/clothes/SUMMERBOTTOM1.jpeg'
+
+import WinterT1 from '../../public/assets/clothes/SNOWTOP1.webp'
+import WinterT2 from '../../public/assets/clothes/SNOWTOP2.webp'
+import WinterB1 from '../../public/assets/clothes/SNOWBOTTOM1.jpeg'
+import WinterB2 from '../../public/assets/clothes/SNOWBOTTOM2.jpeg'
+import SNOWT1 from "../../public/assets/clothes/SNOWTOP1.webp";
+import SNOWT2 from "../../public/assets/clothes/SNOWTOP2.webp";
+import SNOWB1 from "../../public/assets/clothes/SNOWBOTTOM1.jpeg";
 const SydneyDemo = () => {
     return (
         <div style={{display: "flex", flexDirection: "column", marginTop: "2rem", zIndex: 200}}>
@@ -16,24 +28,17 @@ const SydneyDemo = () => {
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Tops</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
                     <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
+                        <Image src={SummerT1} alt={""} width={500} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Polkadot Shirt</b></p>
                         <p>Size M</p>
                         <p>$45</p>
                         <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
                     </div>
                     <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
+                        <Image src={SummerT2} alt={""} width={500} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Spotted Shirt</b></p>
                         <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
+                        <p>$26</p>
                         <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
                     </div>
                 </div>
@@ -42,21 +47,7 @@ const SydneyDemo = () => {
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Bottoms</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
                     <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
+                        <Image src={SummerB1} alt={""} width={300} height={300}/>
                         <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
                         <p>Size M</p>
                         <p>$45</p>
@@ -67,19 +58,26 @@ const SydneyDemo = () => {
             <div style={{width: "100%", margin: "auto"}}>
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Shoes</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                        <img src={"https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/20/203/1116/100/7/978816430/978816430_1_720x928.webp"} alt={""} width={300} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Isabella Heeled Shoe in Black</b></p>
+                        <p>Size 7</p>
+                        <p>$127</p>
+                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
                     </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                        <img src={"https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/20/210/1131/102/4/965656450/965656450_1_720x928.webp"} alt={""} width={300} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Melvin Flat Shoes In Winter in White Leather</b></p>
+                        <p>Size 7</p>
+                        <p>$127</p>
+                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
+                    </div>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                        <img src={"https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/20/201/1138/487/2/953592310/953592310_1_720x928.webp"} alt={""} width={300} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Lanette Leather Pump</b></p>
+                        <p>Size 7</p>
+                        <p>$179</p>
+                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
                     </div>
                 </div>
             </div>
@@ -96,71 +94,43 @@ const BanffDemo = () => {
             <div style={{width: "100%", margin: "auto"}}>
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Tops</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                    <Image src={SNOWT1} alt={""} width={300} height={300}/>
+                    <p style={{fontSize:"1.5rem"}}><b>Patagonia Synchila Jacket</b></p>
+                    <p>Size M</p>
+                    <p>$249</p>
+                    <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
+                </div>
+                <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                    <Image src={SNOWT2} alt={""} width={300} height={300}/>
+                    <p style={{fontSize:"1.5rem"}}><b>Snow Puffer</b></p>
+                    <p>Size M</p>
+                    <p>$199</p>
+                    <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
+                </div>
                 </div>
             </div>
             <div style={{width: "100%", margin: "auto"}}>
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Bottoms</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                        <Image src={SNOWB1} alt={""} width={300} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Ski Pants</b></p>
                         <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
+                        <p>$120</p>
+                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
                     </div>
                 </div>
             </div>
             <div style={{width: "100%", margin: "auto"}}>
                 <h2 style={{display: "flex", fontSize: "3rem", justifyContent: "flex-start"}}>Shoes</h2>
                 <div style={{margin: "1rem 0", display: "flex", gap:"3rem", flexDirection: "row"}}>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
-                    </div>
-                    <div style={{width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
-                        <img src={"https://picsum.photos/200"} alt={""} width={300} height={300}/>
-                        <p style={{fontSize:"1.5rem"}}><b>Nike Tee Shirt</b></p>
-                        <p>Size M</p>
-                        <p>$45</p>
-                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>More about this item</button>
+                    <div style={{marginBottom: "5rem",width: "20rem", gap: "0.5rem", padding: "2rem", borderRadius: "2rem", backgroundColor: "white", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                        <img src={"https://i8.amplience.net/i/jpl/jd_059932_a?qlt=92&w=950&h=673&v=1&fmt=auto"} alt={""} width={300} height={300}/>
+                        <p style={{fontSize:"1.5rem"}}><b>Timberland 6" Premium Boot</b></p>
+                        <p>Size 7</p>
+                        <p>$345</p>
+                        <button style={{backgroundColor: "#000", color: "#FFF", padding: "0.6rem", borderRadius: "1rem"}}>See More</button>
                     </div>
                 </div>
             </div>

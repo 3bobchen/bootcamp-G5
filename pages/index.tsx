@@ -56,7 +56,7 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                     variants={FADE_DOWN_ANIMATION_VARIANTS}
                 >
                     {
-                        auth.auth ? <Balancer>Hi Harry</Balancer> : <Balancer>Same clothes, new fits</Balancer>
+                        auth.auth ? <Balancer>Hi Caitlin</Balancer> : <Balancer>Same clothes, new fits</Balancer>
                     }
                 </motion.h1>
                 <motion.p
@@ -90,7 +90,7 @@ export default function Home(auth: { auth: boolean, setAuth: (input: boolean)=>{
                                 </svg>
                                 <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
                                     <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                                        Try Wardrobe today!
+                                        Try Weardrobe today!
                                     </h2>
                                     <p className="mt-6 text-lg leading-8 text-gray-300">
                                         Discover new fits and looks using the clothes you already have!
